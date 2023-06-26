@@ -145,9 +145,11 @@ section.hero .left, section.hero .right {
 /*               Info Styles               */
 /*******************************************/
 
+
 section.information {
     padding: 50px 0 100px 0;
     background-color: #fffbf0;
+    position: relative;
 }
 
 section.information h3 {
@@ -212,6 +214,17 @@ section.quote p:first-child {
     font-weight: 200;
     font-style: italic;
     margin-bottom: 20px;
+    position: relative;
+}
+
+section.quote p:first-child::before {
+    content: '"';
+    font-size: 230px;
+    position: absolute;
+    top: -90px;
+    left: -100px;
+    z-index: 9999;
+    color: #1f29373b;
 }
 
 section.quote p:nth-child(2) {
